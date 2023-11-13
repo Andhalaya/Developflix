@@ -36,7 +36,7 @@ function filtrarPeliculas(containerId, generoId) {
     });
 }
 
-// Initial population of movies (e.g., show all movies)
+
 filtrarPeliculas('genero-28', 28);
 filtrarPeliculas('genero-53', 53);
 filtrarPeliculas('genero-12', 12);
