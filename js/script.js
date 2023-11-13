@@ -40,3 +40,26 @@ function filtrarPeliculas(containerId, generoId) {
 filtrarPeliculas('genero-28', 28);
 filtrarPeliculas('genero-53', 53);
 filtrarPeliculas('genero-12', 12);
+
+/* CORRECCION
+
+const filtradoPeliculas = (generoID, contenedorID) => {
+    const contenedor = document.getElementById(contenedorID)
+    const peliculasGenero = peliculas.filter((pelicula) => pelicula.genre_ids.includes(generoID))
+
+    for(const pelicula of peliculasGenero) {
+        let templatePelis = `
+        <div class = "pelicula">
+            <img src = "https://image.tmdb.org/t/p/w500/${pelicula.poster_path}" alt = "${pelicula.title}" />
+            <p>${pelicula.title}</p>
+        </div>
+        `;
+        contenedor.innerHTML += templatePelis
+    }
+}
+
+filtradoPeliculas(28, 'genero-28');
+filtradoPeliculas(53, 'genero-53');
+filtradoPeliculas(12, 'genero-12');
+
+*/
