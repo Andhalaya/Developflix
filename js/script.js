@@ -6,7 +6,7 @@ function mostrarPelicula(pelicula) {
 
     /* Imagen de portada*/
     const caratula = document.createElement('img');
-    caratula.src = `https://image.tmdb.org/t/p/w500/${pelicula.poster_path}`; // Adjust the size if needed
+    caratula.src = `https://image.tmdb.org/t/p/w500/${pelicula.poster_path}`; 
     caratula.alt = `${pelicula.title} Poster`;
 
    /*titulo de la pelicula*/
@@ -36,7 +36,7 @@ function filtrarPeliculas(containerId, generoId) {
     });
 }
 
-// Initial population of movies (e.g., show all movies)
+
 filtrarPeliculas('genero-28', 28);
 filtrarPeliculas('genero-53', 53);
 filtrarPeliculas('genero-12', 12);
